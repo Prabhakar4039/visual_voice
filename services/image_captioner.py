@@ -38,7 +38,8 @@ def _load_blip_pipeline() -> Any:
         from transformers import pipeline  # noqa: PLC0415
 
         logger.info("Loading BLIP model: %s", BLIP_MODEL_ID)
-        pipe = pipeline("image-to-text", model=BLIP_MODEL_ID)
+        # Use device=-1 for CPU (Standard for Streamlit Cloud)
+        pipe = pipeline("image-to-text", model=BLIP_MODEL_ID, device=-1)
         logger.info("BLIP model loaded successfully.")
         return pipe
     except Exception as exc:
