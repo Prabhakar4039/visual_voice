@@ -1,0 +1,47 @@
+# ── Python cache ───────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# ── Virtual environments ────────────────
+.env
+.venv
+venv/
+env/
+ENV/
+
+# ── Temp & runtime files ────────────────
+temp/
+logs/
+*.flac
+*.mp3
+*.wav
+
+# ── Git ────────────────────────────────
+.git/
+.gitignore
+
+# ── IDE / OS ───────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── HuggingFace model cache ─────────────
+# (don't bake large models into the image — they download at runtime)
+~/.cache/huggingface/
+.cache/
+
+# ── Test / Dev ─────────────────────────
+tests/
+*.test.py
+pytest.ini
+.pytest_cache/
+
+# ── Docs (not needed in container) ─────
+README.md
+*.md
+img-audio/
