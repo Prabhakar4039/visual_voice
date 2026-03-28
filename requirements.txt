@@ -1,15 +1,7 @@
-# VisualVoice — Cloud Production Requirements
-# ----------------------------------------
-streamlit<2.0.0,>=1.32.0
-
-# AI / ML (Stability Focused)
-transformers>=4.48.0
-torch>=2.2.0
-Pillow>=10.2.0
-accelerate>=0.27.0
-protobuf>=4.25.0,<6.0.0
-
-# SDKs & Core
-openai>=1.12.0,<2.0.0
-requests>=2.31.0,<3.0.0
-python-dotenv>=1.0.1,<2.0.0
+# High-Stability Cloud Requirements 🚀
+streamlit
+transformers
+torch
+Pillow
+openai
+python-dotenv
