@@ -1,0 +1,9 @@
+# System-level dependencies for Streamlit Cloud (Debian/Ubuntu)
+# Required for Pillow compilation when pre-built wheels are missing
+libjpeg-dev
+zlib1g-dev
+
+# Required for Vision/OpenCV-based tasks in Transformers
+libgl1-mesa-glx
+libglib2.0-0
+freeglut3-dev

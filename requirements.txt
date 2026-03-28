@@ -7,10 +7,11 @@
 streamlit>=1.32.0,<2.0.0
 
 # ── AI / ML ────────────────────────────
-transformers>=4.38.0,<5.0.0
-torch>=2.2.0                     # CPU-only is fine; use torch+cu121 for GPU
-Pillow>=10.2.0,<11.0.0           # Image I/O for BLIP pipeline
-accelerate>=0.27.0               # Optional: speeds up transformers inference
+transformers>=4.48.0,<5.0.0
+torch>=2.2.0                     # CPU-only on Streamlit Cloud is fine
+Pillow>=10.2.0                   # Relaxed to find compatible wheels
+accelerate>=0.27.0               # Speeds up transformers inference
+protobuf>=4.25.0,<6.0.0          # Stable range for transformers
 
 # ── Grok / OpenAI-compatible client ───
 openai>=1.12.0,<2.0.0
