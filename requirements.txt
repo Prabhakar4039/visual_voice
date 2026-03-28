@@ -1,25 +1,15 @@
-# VisualVoice — Production Requirements
+# VisualVoice — Cloud Production Requirements
 # ----------------------------------------
-# Pin major versions for reproducibility.
-# Run: pip install -r requirements.txt
+streamlit<2.0.0,>=1.32.0
 
-# ── Core Streamlit ─────────────────────
-streamlit>=1.32.0,<2.0.0
+# AI / ML (Stability Focused)
+transformers>=4.48.0
+torch>=2.2.0
+Pillow>=10.2.0
+accelerate>=0.27.0
+protobuf>=4.25.0,<6.0.0
 
-# ── AI / ML ────────────────────────────
-transformers>=4.48.0,<5.0.0
-torch>=2.2.0                     # CPU-only on Streamlit Cloud is fine
-Pillow>=10.2.0                   # Relaxed to find compatible wheels
-accelerate>=0.27.0               # Speeds up transformers inference
-protobuf>=4.25.0,<6.0.0          # Stable range for transformers
-
-# ── Grok / OpenAI-compatible client ───
+# SDKs & Core
 openai>=1.12.0,<2.0.0
-
-# ── HTTP & env ─────────────────────────
 requests>=2.31.0,<3.0.0
 python-dotenv>=1.0.1,<2.0.0
-
-# ── Utilities ──────────────────────────
-# (all stdlib on Python 3.9+; listed for clarity)
-# pathlib, logging, zipfile, io, uuid — stdlib, no install needed
